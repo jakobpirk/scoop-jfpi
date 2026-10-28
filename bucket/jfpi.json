@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "description": "Make a Just F*cking Prompt It link for questions someone could have asked an AI.",
+  "homepage": "https://www.justfuckingprompt.it/integrations",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/jakobpirk/jfpi/releases/download/cli-v1.0.0/jfpi-windows-x64.exe#/jfpi.exe",
+      "hash": "00b903d0823081d5ed4c8e7c2a4bc76e75771d8e3ab49cdc527c36aa07aad181"
+    }
+  },
+  "bin": "jfpi.exe",
+  "checkver": { "github": "https://github.com/jakobpirk/jfpi" },
+  "autoupdate": {
+    "architecture": {
+      "64bit": { "url": "https://github.com/jakobpirk/jfpi/releases/download/cli-v$version/jfpi-windows-x64.exe#/jfpi.exe" }
+    }
+  }
+}
